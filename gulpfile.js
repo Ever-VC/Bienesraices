@@ -38,7 +38,7 @@ export function css(done) {
 export async function imagenes(done) {
     const srcDir = './src/img';
     const buildDir = './build/img';
-    const images =  await glob(paths.imagenes + '{jpg,png}')
+    const images =  await glob(paths.imagenes + '{jpg,png,svg}');
 
     images.forEach(file => {
         const relativePath = path.relative(srcDir, path.dirname(file));
@@ -52,6 +52,15 @@ function procesarImagenes(file, outputSubDir) {
     if (!fs.existsSync(outputSubDir)) {
         fs.mkdirSync(outputSubDir, { recursive: true })
     }
+
+    // Verifica si el archivo es un SVG, si es así, lo copia directamente
+    if (path.extname(file) === '.svg') {
+        const baseName = path.basename(file, path.extname(file))
+        const outputFile = path.join(outputSubDir, `${baseName}.svg`)
+        fs.copyFileSync(file, outputFile)
+        return
+    }
+
     const baseName = path.basename(file, path.extname(file))
     const extName = path.extname(file)
     const outputFile = path.join(outputSubDir, `${baseName}${extName}`)
