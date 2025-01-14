@@ -368,4 +368,55 @@ h4 {
 
 .contenido-centrado {
   max-width: 800px;
+}
+
+/* UI */
+.header {
+  background-color: #333333;
+  padding: 1rem 0 3rem 0;
+}
+
+.barra {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+}
+@media (min-width: 768px) {
+  .barra {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  .navegacion {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+.navegacion a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 2.2rem;
+  display: block;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .navegacion a {
+    fz: 1.8rem;
+  }
+}
+
+.footer {
+  padding: 2.5rem 0;
+  background-color: #333333;
+}
+.footer .contenido-footer {
+  padding-top: 2.5rem;
+}
+
+.copyright {
+  color: #FFFFFF;
+  text-align: center;
 }/*# sourceMappingURL=app.css.map */
