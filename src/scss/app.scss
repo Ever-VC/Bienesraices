@@ -3,3 +3,8 @@
 @forward 'base/mixins';
 @forward 'base/globales';
 @forward 'base/utilidades';
+
+/* UI */
+@forward 'layout/header';
+@forward 'layout/navegacion';
+@forward 'layout/footer';
