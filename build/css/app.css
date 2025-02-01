@@ -371,9 +371,44 @@ h4 {
 }
 
 /* UI */
+.no-webp .inicio {
+  background-image: url("../img/header.jpg");
+}
+
+.webp .inicio {
+  background-image: url("../img/header.webp");
+}
+
 .header {
   background-color: #333333;
   padding: 1rem 0 3rem 0;
+}
+.header.inicio {
+  background-position: center center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .header.inicio {
+    min-height: 70rem;
+  }
+}
+@media (min-width: 768px) {
+  .header.inicio .contenido-header {
+    min-height: 70rem;
+  }
+}
+
+.contenido-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contenido-header h1 {
+  text-align: left;
+  color: #FFFFFF;
+  font-weight: 700;
+  line-height: 2;
+  max-width: 60rem;
 }
 
 .barra {
@@ -407,6 +442,9 @@ h4 {
     fz: 1.8rem;
   }
 }
+.navegacion a:hover {
+  color: #71B100;
+}
 
 .footer {
   padding: 2.5rem 0;
@@ -419,4 +457,21 @@ h4 {
 .copyright {
   color: #FFFFFF;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .iconos-nosotros {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.icono {
+  text-align: center;
+}
+.icono img {
+  height: 10rem;
+}
+.icono h3 {
+  text-transform: uppercase;
 }/*# sourceMappingURL=app.css.map */
