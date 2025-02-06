@@ -370,6 +370,39 @@ h4 {
   max-width: 800px;
 }
 
+.alinear-derecha {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.boton-amarillo {
+  background-color: #E08709;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  display: block;
+}
+.boton-amarillo:hover {
+  background-color: rgb(199.4849785408, 120.2253218884, 8.0150214592);
+}
+
+.boton-verde {
+  background-color: #71B100;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  display: inline-block;
+}
+.boton-verde:hover {
+  background-color: rgb(96.7203389831, 151.5, 0);
+}
+
 /* UI */
 .no-webp .inicio {
   background-image: url("../img/header.jpg");
@@ -474,4 +507,44 @@ h4 {
 }
 .icono h3 {
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .contenedor-anuncios {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.anuncio {
+  background-color: rgb(237.75, 237.75, 237.75);
+  border: 1px solid rgb(178.5, 178.5, 178.5);
+}
+.anuncio .contenido-anuncio {
+  padding: 2rem;
+}
+.anuncio h3, .anuncio p {
+  margin: 0;
+}
+.anuncio .precio {
+  color: #71B100;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.iconos-caracteristicas {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.iconos-caracteristicas li {
+  flex: 1;
+  display: flex;
+}
+.iconos-caracteristicas li img {
+  flex: 0 0 3rem;
+  margin-right: 1rem;
+}
+.iconos-caracteristicas li p {
+  font-weight: 900;
 }/*# sourceMappingURL=app.css.map */
