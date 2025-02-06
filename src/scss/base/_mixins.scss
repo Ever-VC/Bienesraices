@@ -1,3 +1,4 @@
+@use "sass:color";
 @use 'variables' as v;
 
 /** Media Queries **/
@@ -22,4 +23,18 @@
     display: grid;
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
+}
+
+@mixin boton($bg-color, $display) {
+    background-color: $bg-color;
+    color: v.$blanco;
+    font-weight: v.$bold;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-align: center;
+    margin-top: calc(v.$separacion / 2);
+    display: $display;
+    &:hover {
+        background-color: color.adjust($bg-color, $lightness: -5%);
+    }
 }
