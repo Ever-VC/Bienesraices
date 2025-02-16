@@ -383,9 +383,23 @@ h4 {
   padding: 1rem 3rem;
   text-align: center;
   margin-top: 2.5rem;
-  display: block;
+  display: inline-block;
 }
 .boton-amarillo:hover {
+  background-color: rgb(199.4849785408, 120.2253218884, 8.0150214592);
+}
+
+.boton-amarillo-block {
+  background-color: #E08709;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  display: block;
+}
+.boton-amarillo-block:hover {
   background-color: rgb(199.4849785408, 120.2253218884, 8.0150214592);
 }
 
