@@ -587,4 +587,51 @@ h4 {
 .imagen-contacto p {
   font-size: 1.8rem;
   color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+  .seccion-inferior {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 2rem;
+  }
+}
+.entrada-blog {
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .entrada-blog {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+  }
+}
+.entrada-blog:last-of-type {
+  margin-bottom: 0;
+}
+
+.texto-entrada a {
+  color: #000000;
+  margin-top: 2rem;
+  display: block;
+}
+@media (min-width: 768px) {
+  .texto-entrada a {
+    margin-top: 0;
+  }
+}
+.texto-entrada h4 {
+  margin: 0;
+  line-height: 1.4;
+}
+.texto-entrada h4::after {
+  content: "";
+  display: block;
+  width: 15rem;
+  height: 0.5rem;
+  background-color: #71B100;
+  margin-top: 1rem;
+}
+.texto-entrada span {
+  color: #E08709;
 }/*# sourceMappingURL=app.css.map */
