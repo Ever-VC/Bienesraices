@@ -367,7 +367,7 @@ h4 {
 }
 
 .contenido-centrado {
-  max-width: 800px;
+  max-width: 80rem;
 }
 
 .alinear-derecha {
@@ -384,9 +384,11 @@ h4 {
   text-align: center;
   margin-top: 2.5rem;
   display: inline-block;
+  border: none;
 }
 .boton-amarillo:hover {
   background-color: rgb(199.4849785408, 120.2253218884, 8.0150214592);
+  cursor: pointer;
 }
 
 .boton-amarillo-block {
@@ -398,9 +400,11 @@ h4 {
   text-align: center;
   margin-top: 2.5rem;
   display: block;
+  border: none;
 }
 .boton-amarillo-block:hover {
   background-color: rgb(199.4849785408, 120.2253218884, 8.0150214592);
+  cursor: pointer;
 }
 
 .boton-verde {
@@ -412,9 +416,11 @@ h4 {
   text-align: center;
   margin-top: 2.5rem;
   display: inline-block;
+  border: none;
 }
 .boton-verde:hover {
   background-color: rgb(96.7203389831, 151.5, 0);
+  cursor: pointer;
 }
 
 /* UI */
@@ -541,7 +547,8 @@ h4 {
 .anuncio h3, .anuncio p {
   margin: 0;
 }
-.anuncio .precio {
+
+.precio {
   color: #71B100;
   font-weight: 700;
   font-size: 3rem;
@@ -551,6 +558,7 @@ h4 {
   display: flex;
   list-style: none;
   padding: 0;
+  max-width: 40rem;
 }
 .iconos-caracteristicas li {
   flex: 1;
@@ -611,6 +619,10 @@ h4 {
   margin-bottom: 0;
 }
 
+.informacion-meta span {
+  color: #E08709;
+}
+
 .texto-entrada a {
   color: #000000;
   margin-top: 2rem;
@@ -632,9 +644,6 @@ h4 {
   height: 0.5rem;
   background-color: #71B100;
   margin-top: 1rem;
-}
-.texto-entrada span {
-  color: #E08709;
 }
 
 .testimonial {
