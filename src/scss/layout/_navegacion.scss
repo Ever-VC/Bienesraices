@@ -31,3 +31,14 @@
         color: v.$verde;
     }
 }
+
+// Menu de hamburguesa
+.mobile-menu {
+    @include m.tablet {
+        display: none;
+    }
+
+    img {
+        width: 5rem;
+    }
+}
