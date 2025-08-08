@@ -7,6 +7,10 @@
     .contenido-footer {
         padding-top: calc(v.$separacion / 2);
     }
+    .navegacion {
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 .copyright {
