@@ -3,7 +3,8 @@
 
 .barra {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    align-items: center;
     padding-top: 3rem;
     @include m.tablet {
         flex-direction: row;
@@ -12,10 +13,15 @@
 }
 
 .navegacion {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s ease-in-out, opacity 0.5s linear;
     @include m.tablet {
         display: flex;
         gap: 2rem;
         align-items: center;
+        opacity: 1;
+        visibility: visible;
     }
     a {
         color: v.$blanco;
@@ -41,4 +47,9 @@
     img {
         width: 5rem;
     }
+}
+
+.mostrar {
+    visibility: visible;
+    opacity: 1;
 }
